@@ -16,3 +16,9 @@ package = "@netlify/plugin-nextjs"
 CYPRESS_CACHE_FOLDER = "../node_modules/.CypressBinary"
 # set TERM variable for terminal output
 TERM = "xterm"
+
+[[plugins]]
+package = "netlify-plugin-cypress"
+
+[plugins.inputs]
+configFile = "./cypress/config/nx-demo.json"
