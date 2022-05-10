@@ -8,7 +8,7 @@ command = "npm run start"
 targetPort = 4200
 
 [[plugins]]
-package = "./local-plugin"
+package = "@netlify/plugin-nextjs"
 
 [build.environment]
 # cache Cypress binary in local "node_modules" folder
@@ -16,6 +16,3 @@ package = "./local-plugin"
 CYPRESS_CACHE_FOLDER = "../node_modules/.CypressBinary"
 # set TERM variable for terminal output
 TERM = "xterm"
-
-[[plugins]]
-package = "@netlify/plugin-local-install-core"
